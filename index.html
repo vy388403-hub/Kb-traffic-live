@@ -1,6 +1,36 @@
-Waldhuni Bridge = Smooth
-Durgadi Bridge = Slow
-Bhiwandi Bypass = Jam
-Kalyan-Bhiwandi Rd = Clear
-Durgadi Bridge to Kongaon = Jam
-Kalyan Bypass = Jam
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KB TRAFFIC LIVE - Kalyan Bhiwandi</title>
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#f1f5f9}
+.header{background:linear-gradient(90deg,#ff6a00,#ee0979);color:#fff;text-align:center;padding:22px 15px}
+.live{width:10px;height:10px;background:red;border-radius:50%;display:inline-block;animation:blink 1s infinite;margin-right:6px}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+.badge{background:#22c55e;padding:8px 18px;border-radius:20px;font-weight:700;display:inline-block;margin-top:8px}
+.container{padding:12px;max-width:600px;margin:auto}
+.time{background:#dcfce7;border:1px dashed #22c55e;padding:10px;border-radius:8px;text-align:center;font-weight:600;margin:12px 0}
+.card{background:#fff;padding:14px;border-radius:12px;margin-bottom:10px;box-shadow:0 2px 6px rgba(0,0,0,.08);display:flex;justify-content:space-between;align-items:center}
+.dot{width:10px;height:10px;border-radius:50%;display:inline-block;margin-right:8px}
+.st{padding:6px 14px;border-radius:20px;color:#fff;font-weight:700;font-size:13px}
+.Smooth{background:#22c55e} .Slow{background:#f59e0b} .Jam{background:#ef4444} .Clear{background:#3b82f6} .HeavyJam{background:#991b1b}
+</style>
+</head>
+<body>
+<div class="header">
+<h2><span class="live"></span>KB TRAFFIC LIVE</h2>
+<p style="margin:5px">Kalyan | Bhiwandi | Durgadi | Bypass</p>
+<div class="badge">🔴 LIVE NOW</div>
+</div>
+<div class="container">
+<div class="time">✅ Updated: <span id="t"></span></div>
+<div id="list"></div>
+<div style="text-align:center;color:#64748b;font-size:12px;margin-top:15px">Roz 7:30AM & 8:30PM Update • kavyamehrotra.github.io</div>
+</div>
+<script>
+// ===== ROZ SIRF YAHI BADLO - BAS YE 6 LINE =====
+let s1 = "Smooth"; // Waldhuni Bridge
+let s2 = "Slow";   // Durgadi Bridge
+let s3 = "Jam";    // Kalyan Bypass 
