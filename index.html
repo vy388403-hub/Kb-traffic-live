@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KB Traffic Live | Kalyan Bhiwandi Traffic Update</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#0f172a;color:#fff;min-height:100vh}
+.header{background:linear-gradient(135deg,#ff6a00,#ee0979);padding:20px;text-align:center}
+.header h1{font-size:28px;font-weight:700}
+.header p{font-size:14px;margin-top:5px}
+.badge{display:inline-block;background:#fff;color:#ee0979;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:700;margin-top:10px}
+.live-dot{width:10px;height:10px;background:#00ff00;border-radius:50%;display:inline-block;animation:blink 1s infinite;margin-right:6px}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0.3}}
+.container{max-width:600px;margin:0 auto;padding:16px}
+.card{background:#1e293b;border-radius:16px;padding:16px;margin-bottom:14px;border:1px solid #334155}
+.traffic-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.traffic-item{background:#0f172a;padding:12px;border-radius:12px;text-align:center;border-left:4px solid}
+.status-green{border-color:#22c55e}.status-yellow{border-color:#eab308}.status-red{border-color:#ef4444}
+.btn{display:block;width:100%;padding:14px;text-align:center;border-radius:12px;text-decoration:none;font-weight:700;font-size:15px;margin-bottom:10px}
+.btn-wa{background:#25D366;color:#fff}.btn-insta{background:linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);color:#fff}
+.footer{text-align:center;padding:20px;color:#64748b;font-size:12px}
+.update-time{background:#22c55e20;border:1px dashed #22c55e;color:#22c55e;padding:8px;border-radius:8px;text-align:center;font-size:13px;font-weight:600;margin-bottom:14px}
+.marquee{background:#facc15;color:#000;padding:6px;font-size:13px;font-weight:700;white-space:nowrap;overflow:hidden}
+</style>
+</head>
+<body>
+<div class="marquee">🚦 KB TRAFFIC LIVE - Kalyan | Bhiwandi | Durgadi | Bypass | 7:30AM & 8:30PM 🚦</div>
+<div class="header">
+<h1><span class="live-dot"></span>KB TRAFFIC LIVE</h1>
+<p>Kalyan | Bhiwandi | Durgadi | Bypass LIVE 🚦</p>
+<p style="font-size:13px">7:30AM & 8:30PM Non-Stop Update</p>
+<div class="badge">🔴 LIVE NOW - 5.1L+ Views Trusted</div>
+</div>
+<div class="container">
+<div class="update-time">✅ Last Updated: <span id="time">Just Now</span></div>
+<div class="card">
+<div style="font-weight:600;margin-bottom:10px">🚧 Current Traffic Status</div>
+<div class="traffic-grid">
+<div class="traffic-item status-green"><h3 style="font-size:13px;color:#94a3b8">Kalyan Station</h3><p style="color:#22c55e;font-weight:700">Smooth</p></div>
+<div class="traffic-item status-yellow"><h3 style="font-size:13px;color:#94a3b8">Durgadi Bridge</h3><p style="color:#eab308;font-weight:700">Slow</p></div>
+<div class="traffic-item status-red"><h3 style="font-size:13px;color:#94a3b8">Bhiwandi Bypass</h3><p style="color:#ef4444;font-weight:700">Jam</p></div>
+<div class="traffic-item status-green"><h3 style="font-size:13px;color:#94a3b8">Kalyan-Bhiwandi Rd</h3><p style="color:#22c55e;font-weight:700">Clear</p></div>
+</div>
+</div>
+<div class="card">
+<p style="font-size:14px;color:#cbd5e1">🔸 <b>Durgadi Bridge:</b> Evening 6-9 PM heavy traffic.<br>🔸 <b>Bypass:</b> Construction work.<br>🔸 <b>Best Time:</b> Before 8 AM & After 10 PM.</p>
+</div>
+<a href="https://whatsapp.com/channel/0029VbDghGuKQuJFYQIq5V0r" class="btn btn-wa">💬 Join WhatsApp Channel</a>
+<a href="https://instagram.com/kalyan.bhiwandi.traffic" class="btn btn-insta">📸 Follow @kalyan.bhiwandi.traffic</a>
+</div>
+<div class="footer">© 2026 KB Traffic Update | Kalyan Bhiwandi<br>By Vipin Yadav | 5.1L Views Trusted</div>
+<script>
+function updateTime(){let now=new Date();document.getElementById('time').innerText=now.toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit'})}
+updateTime();setInterval(updateTime,60000);
+</script>
+</body>
+</html>
